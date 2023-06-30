@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Vision | Artificial Intelligence</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #6f2bf5;" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🔍Crime Vision</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/prediction">Identify</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-between">
+        <div class="content p-4 mx-5 w-100">
+            <h1>Stop Crime in its tracks: <br>
+                Understand criminal classification
+            </h1>
+
+            <h4>Unlocking the Power of AI to Combat Crime</h4>
+
+            <div class="content-in">
+                Our revolutionary platform harnesses the incredible potential of Artificial Intelligence (AI) to
+                transform
+                the way we identify, analyze, and classify criminal activities. By leveraging advanced algorithms and
+                machine learning techniques, we empower law enforcement agencies, investigators, and security
+                professionals
+                to stay one step ahead of criminals.
+            </div>
+            <div class="content-2">
+                Crime classification is the process Of categorizing criminal offenses into
+                different types or classes based on their nature, severity, and other
+                Characteristics. The classification Of Crimes helps law enforcement
+                agencies and criminal justice systems to better understand and manage
+                criminal activity, to allocate resources efficiently, and to develop
+                appropriate responses to different types of criminal behavior. By using
+                deep learning, it is possible to analyze images and video footage of
+                crime scenes or incidents and classify different types Of crimes based on
+                the type of activity depicted in the images. This can be useful in a variety
+                Of Criminal justice and law enforcement contexts, including Crime Scene
+                investigation, forensic anatysis ard surveilLance. Deep learning
+                algorithms can be trained to recognize patterns and features in images
+                and video that are relevant to identifying different types of crimes
+            </div>
+
+            <a href="{{ url_for('prediction') }}" class="prediction-link"><button type="button" class="btn button "
+                    style="background-color: #6f2bf5;color:white;">
+                    Crime Classifier
+                </button></a>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static',filename='images/pngwing.com (1).png') }}" alt="Crime Detection Image"
+                width="500px" style="margin-top: 20px;" />
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+nav {
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #212529;
+    color: #d7dadb;
+}
+
+.navbar-brand {
+    margin-inline-start: 40px;
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    margin-top:30px ;
+    text-align: center;
+}
+.content-in{
+    justify-content: space-between;
+    margin-block: 20px;
+}
+.prediction{
+    padding-block: 20px;
+}
+.content-2{
+    margin-block: 20px;
+}
+.predict-label{
+    font-size: 23px;
+}
